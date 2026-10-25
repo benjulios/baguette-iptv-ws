@@ -4,46 +4,77 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Baguette IPTV – SACAREV</title>
-<meta name="description" content="Baguette IPTV, a media player for Samsung Smart TV by SACAREV. Lecteur multimédia pour Samsung Smart TV.">
+<meta name="description" content="Baguette IPTV, un lecteur pour vos propres listes IPTV sur Samsung Smart TV, par SACAREV. A player for your own IPTV lists on Samsung Smart TV.">
+<meta name="theme-color" content="#0b0b0b">
+<meta property="og:title" content="Baguette IPTV">
+<meta property="og:description" content="Le lecteur pour vos propres listes IPTV sur Samsung Smart TV. The player for your own IPTV lists on Samsung Smart TV.">
+<meta property="og:image" content="https://benjulios.github.io/baguette-iptv/screens/home.png">
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header>
-    <img src="icon.png" alt="Baguette IPTV logo">
-    <div>
-      <h1>Baguette <span>IPTV</span></h1>
-      <nav><a href="#fr">Français</a><a href="#en">English</a><a href="privacy.html">Confidentialité / Privacy</a></nav>
-    </div>
-  </header>
+<header class="top">
+  <a class="brand" href="index.html"><img src="icon.png" alt="" width="44" height="44"><span>Baguette <b>IPTV</b></span></a>
+  <nav><a href="#fr">Français</a><a href="#en">English</a><a href="privacy.html">Confidentialité / Privacy</a></nav>
+</header>
 
-  <section id="fr">
+<main>
+  <section class="hero">
+    <img class="logo" src="icon.png" alt="Baguette IPTV logo" width="120" height="120">
+    <h1>Baguette <span>IPTV</span></h1>
+    <p class="tagline">Le lecteur pour vos propres listes, sur Samsung Smart TV.</p>
+    <p class="tagline en">The player for your own lists, on Samsung Smart TV.</p>
+    <figure class="shot wide"><img src="screens/home.png" alt="Accueil : reprise, vos chaînes, nouveaux films / Home: continue watching, your channels, new films" width="1280" height="720"></figure>
+  </section>
+
+  <section class="gallery" aria-label="Captures d'écran / Screenshots">
+    <figure class="shot"><img src="screens/live.png" alt="" width="1280" height="720" loading="lazy"><figcaption>TV en direct, en rangées par catégorie<span>Live TV in rows by category</span></figcaption></figure>
+    <figure class="shot"><img src="screens/guide.png" alt="" width="1280" height="720" loading="lazy"><figcaption>Guide des programmes<span>Programme guide</span></figcaption></figure>
+    <figure class="shot"><img src="screens/movies.png" alt="" width="1280" height="720" loading="lazy"><figcaption>Films, avec filtres par note, année et tri<span>Films, with rating, year and sort filters</span></figcaption></figure>
+    <figure class="shot"><img src="screens/series.png" alt="" width="1280" height="720" loading="lazy"><figcaption>Séries, saisons et épisodes<span>Series, seasons and episodes</span></figcaption></figure>
+    <figure class="shot"><img src="screens/player.png" alt="" width="1280" height="720" loading="lazy"><figcaption>Lecture : avance rapide, audio, image<span>Playback: seeking, audio, picture</span></figcaption></figure>
+    <figure class="shot"><img src="screens/search.png" alt="" width="1280" height="720" loading="lazy"><figcaption>Une seule recherche pour tout<span>One search for everything</span></figcaption></figure>
+  </section>
+  <p class="note">Captures réalisées avec des données de démonstration. / Screenshots made with demo data.</p>
+
+  <section id="fr" class="lang-block">
     <p class="lang">Français</p>
     <h2>Un lecteur multimédia pour Samsung Smart TV</h2>
     <p>Baguette IPTV lit vos propres sources : une liste de lecture M3U/M3U8, ou le compte d'un fournisseur utilisant l'API de lecture Xtream.</p>
-    <p><strong>Aucun contenu n'est fourni.</strong> L'application ne contient aucune chaîne ni liste, et ne recommande aucun fournisseur. Vous êtes responsable des sources que vous utilisez.</p>
-    <ul>
-      <li>TV en direct avec guide des programmes (XMLTV)</li>
-      <li>Films et séries, avec pause et avance/retour rapide</li>
-      <li>Favoris et recherche</li>
-      <li>Confidentialité : DNS chiffré (DNS-over-TLS) pour les connexions de l'application</li>
-    </ul>
+    <p class="warn"><strong>Aucun contenu n'est fourni.</strong> L'application ne contient aucune chaîne ni liste, et ne recommande aucun fournisseur. Vous êtes responsable des sources que vous utilisez.</p>
+    <div class="features">
+      <article><img src="img/playlist.png" alt=""><h3>Plusieurs listes</h3><p>Ajoutez plusieurs abonnements et passez de l'un à l'autre depuis le menu. Chaque liste garde ses favoris, son historique et ses reprises. Les listes se mettent à jour toutes seules, ou à la demande.</p></article>
+      <article><img src="img/home.png" alt=""><h3>Un accueil qui va à l'essentiel</h3><p>Reprenez là où vous en étiez, retrouvez vos chaînes, découvrez les nouveaux films et séries, avec une grande affiche et le résumé.</p></article>
+      <article><img src="img/tv.png" alt=""><h3>TV en direct</h3><p>Les chaînes en rangées par catégorie, un aperçu dès que vous vous arrêtez sur l'une d'elles, un zapping rapide, et une reconnexion automatique si le flux s'interrompt.</p></article>
+      <article><img src="img/guide.png" alt=""><h3>Guide des programmes</h3><p>Ce qui passe maintenant et ensuite, et une grille sur plusieurs heures. Le guide se met à jour en arrière-plan, et un décalage horaire se corrige automatiquement ou à la main.</p></article>
+      <article><img src="img/film.png" alt=""><h3>Films</h3><p>Des affiches par catégorie, des filtres par note minimale, par année, par ordre de tri ou non vus seulement, et une page détaillée pour chaque film.</p></article>
+      <article><img src="img/series.png" alt=""><h3>Séries</h3><p>Saisons et épisodes, reprise de l'épisode en cours, et l'épisode suivant qui démarre tout seul après un compte à rebours.</p></article>
+      <article><img src="img/search.png" alt=""><h3>Une seule recherche</h3><p>Chaînes, catégories, films et séries à la fois, résultats pendant la saisie, et vos recherches récentes à portée de main.</p></article>
+      <article><img src="img/video.png" alt=""><h3>Lecture confortable</h3><p>Barre de lecture et avance rapide (maintenez pour aller plus vite), choix de la langue audio, format d'image et mise en mémoire tampon réglable.</p></article>
+      <article><img src="img/heart.png" alt=""><h3>Favoris</h3><p>Ajoutez chaînes, films et séries à vos favoris. Maintenez OK sur une carte pour la retirer de vos favoris ou de « Reprendre ».</p></article>
+      <article class="wide"><img src="img/network.png" alt=""><h3>Confidentialité</h3><p>DNS chiffré (DNS-over-TLS) pour les connexions de l'application. Ni publicité, ni statistiques, ni traceurs : vos données restent sur votre téléviseur.</p></article>
+    </div>
     <h2>Assistance</h2>
     <p>Écrivez-nous à <a href="mailto:benjulios@gmail.com">benjulios@gmail.com</a>.</p>
   </section>
 
-  <section id="en">
+  <section id="en" class="lang-block">
     <p class="lang">English</p>
     <h2>A media player for Samsung Smart TV</h2>
     <p>Baguette IPTV plays your own sources: an M3U/M3U8 playlist, or an account with a provider that uses the Xtream player API.</p>
-    <p><strong>No content is included.</strong> The app ships no channels or lists and does not recommend any provider. You are responsible for the sources you use.</p>
-    <ul>
-      <li>Live TV with a programme guide (XMLTV)</li>
-      <li>Movies and series, with pause and seek</li>
-      <li>Favorites and search</li>
-      <li>Privacy: encrypted DNS (DNS-over-TLS) for the app's own connections</li>
-    </ul>
+    <p class="warn"><strong>No content is included.</strong> The app ships no channels or lists and does not recommend any provider. You are responsible for the sources you use.</p>
+    <div class="features">
+      <article><img src="img/playlist.png" alt=""><h3>Several playlists</h3><p>Add several subscriptions and switch between them from the menu. Each keeps its own favorites, history and resume points. Lists update on their own, or when you ask.</p></article>
+      <article><img src="img/home.png" alt=""><h3>A home screen that gets to the point</h3><p>Pick up where you left off, find your channels, and discover new films and series, with large artwork and a summary.</p></article>
+      <article><img src="img/tv.png" alt=""><h3>Live TV</h3><p>Channels in rows by category, a preview as soon as you rest on one, quick zapping, and automatic reconnection if a stream drops.</p></article>
+      <article><img src="img/guide.png" alt=""><h3>Programme guide</h3><p>What's on now and next, and a grid over several hours. The guide updates in the background, and a time offset is corrected automatically or by hand.</p></article>
+      <article><img src="img/film.png" alt=""><h3>Films</h3><p>Posters by category, filters by minimum rating, year, sort order or unwatched only, and a detailed page for every film.</p></article>
+      <article><img src="img/series.png" alt=""><h3>Series</h3><p>Seasons and episodes, resume the episode you were watching, and the next episode starts by itself after a countdown.</p></article>
+      <article><img src="img/search.png" alt=""><h3>One search</h3><p>Channels, categories, films and series at once, results as you type, and your recent searches close at hand.</p></article>
+      <article><img src="img/video.png" alt=""><h3>Comfortable playback</h3><p>A seek bar with fast skipping (hold to go faster), audio language, picture size and adjustable buffering.</p></article>
+      <article><img src="img/heart.png" alt=""><h3>Favorites</h3><p>Add channels, films and series to your favorites. Hold OK on a card to take it out of your favorites or of "Continue watching".</p></article>
+      <article class="wide"><img src="img/network.png" alt=""><h3>Privacy</h3><p>Encrypted DNS (DNS-over-TLS) for the app's own connections. No ads, no analytics, no trackers: your data stays on your TV.</p></article>
+    </div>
     <h2>Support</h2>
     <p>Email us at <a href="mailto:benjulios@gmail.com">benjulios@gmail.com</a>.</p>
   </section>
