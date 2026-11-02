@@ -16,12 +16,12 @@
 
 <main class="doc">
   <h1>Politique de confidentialité <span class="muted">/ Privacy policy</span></h1>
-  <p class="muted">En vigueur le 29 octobre 2026 / Effective 29 October 2026</p>
+  <p class="muted">En vigueur le 2 novembre 2026 / Effective 2 November 2026</p>
 
   <section id="fr">
     <p class="lang">Français</p>
     <h2>En bref</h2>
-    <p>Baguette TV, édité par SACAREV, ne collecte aucune donnée personnelle. Nous n'exploitons aucun serveur pour l'application, et elle ne contient ni publicité, ni statistiques, ni traceurs.</p>
+    <p>Baguette TV, édité par SACAREV, ne collecte aucune donnée personnelle. L'application ne contient ni publicité, ni statistiques, ni traceurs. Le seul serveur que nous exploitons sert à la connexion depuis un téléphone : il transmet votre liste de lecture chiffrée, sans pouvoir la lire, et ne la garde pas.</p>
     <h2>Ce qui reste sur votre téléviseur</h2>
     <p>Tout ce que l'application enregistre reste dans son espace de stockage sur votre téléviseur et ne nous est jamais envoyé :</p>
     <ul>
@@ -41,14 +41,22 @@
     </ul>
     <p>Sur les téléviseurs LG, ces connexions passent par un petit service de l'application qui tourne sur le téléviseur lui-même. Il ne fait que les relayer et n'envoie rien ailleurs.</p>
     <p>Ces services voient l'adresse IP de votre connexion et appliquent leur propre politique de confidentialité. Le fabricant de votre téléviseur (Samsung ou LG), en tant qu'opérateur de sa boutique d'applications, applique la sienne.</p>
+    <h2>Connexion depuis un téléphone</h2>
+    <p>Si vous ajoutez une liste en scannant le code QR du téléviseur (« Or use your phone »), le téléviseur et votre téléphone passent par notre relais, tvlink.tail770ef7.ts.net :</p>
+    <ul>
+      <li>le téléviseur crée une clé de chiffrement et envoie au relais sa partie publique ; le relais lui donne un code de 6 caractères ;</li>
+      <li>votre téléphone chiffre ce que vous saisissez (adresse du serveur, identifiant et mot de passe, ou adresse de la liste) avec la clé du téléviseur avant de l'envoyer : seul le téléviseur peut le déchiffrer ;</li>
+      <li>le relais garde ce contenu chiffré en mémoire jusqu'à ce que le téléviseur le récupère, 15 minutes au plus, puis l'efface. Il n'écrit rien sur disque et ne tient aucun journal des connexions. Il garde l'adresse IP des appareils 10 minutes en mémoire, seulement pour bloquer les abus (trop de codes demandés ou erronés).</li>
+    </ul>
+    <p>Le relais est joignable grâce à Tailscale Funnel, qui achemine la connexion chiffrée sans pouvoir la lire. Si vous saisissez votre liste avec la télécommande, le relais n'est pas utilisé.</p>
     <h2>Vos droits</h2>
-    <p>Comme nous ne détenons aucune donnée vous concernant, il n'y a rien à consulter, corriger ou supprimer chez nous. Pour toute question : <a href="mailto:benjulios@gmail.com">benjulios@gmail.com</a>. Vous pouvez aussi saisir la CNIL (www.cnil.fr).</p>
+    <p>Comme nous ne gardons aucune donnée vous concernant (le relais efface tout au bout de 15 minutes au plus), il n'y a rien à consulter, corriger ou supprimer chez nous. Pour toute question : <a href="mailto:benjulios@gmail.com">benjulios@gmail.com</a>. Vous pouvez aussi saisir la CNIL (www.cnil.fr).</p>
   </section>
 
   <section id="en">
     <p class="lang">English</p>
     <h2>In short</h2>
-    <p>Baguette TV, published by SACAREV, does not collect any personal data. We run no servers for the app, and it contains no ads, analytics or trackers.</p>
+    <p>Baguette TV, published by SACAREV, does not collect any personal data. The app contains no ads, analytics or trackers. The only server we run is for signing in from a phone: it passes on your encrypted playlist without being able to read it, and doesn't keep it.</p>
     <h2>What stays on your TV</h2>
     <p>Everything the app saves stays in its storage on your TV and is never sent to us:</p>
     <ul>
@@ -68,8 +76,16 @@
     </ul>
     <p>On LG TVs, these connections go through a small service of the app that runs on the TV itself. It only relays them and sends nothing anywhere else.</p>
     <p>These services see your connection's IP address and apply their own privacy policies. Your TV's maker (Samsung or LG), as the operator of its app store, applies its own.</p>
+    <h2>Signing in from a phone</h2>
+    <p>If you add a playlist by scanning the TV's QR code ("Or use your phone"), the TV and your phone go through our relay, tvlink.tail770ef7.ts.net:</p>
+    <ul>
+      <li>the TV makes an encryption key and sends its public half to the relay, which gives it a 6-character code;</li>
+      <li>your phone encrypts what you enter (the server address, username and password, or the playlist address) with the TV's key before sending it: only the TV can decrypt it;</li>
+      <li>the relay keeps this encrypted content in memory until the TV collects it, 15 minutes at most, then deletes it. It writes nothing to disk and keeps no connection logs. It keeps devices' IP addresses in memory for 10 minutes, only to block abuse (too many codes asked for or mistyped).</li>
+    </ul>
+    <p>The relay is reached through Tailscale Funnel, which carries the encrypted connection without being able to read it. If you enter your playlist with the remote, the relay isn't used.</p>
     <h2>Your rights</h2>
-    <p>Because we hold no data about you, there is nothing for us to access, correct or delete. For any question: <a href="mailto:benjulios@gmail.com">benjulios@gmail.com</a>. You can also contact the French data protection authority, the CNIL (www.cnil.fr).</p>
+    <p>Because we keep no data about you (the relay deletes everything within 15 minutes), there is nothing for us to access, correct or delete. For any question: <a href="mailto:benjulios@gmail.com">benjulios@gmail.com</a>. You can also contact the French data protection authority, the CNIL (www.cnil.fr).</p>
   </section>
 
   <footer>
